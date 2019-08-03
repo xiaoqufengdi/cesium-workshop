@@ -1,0 +1,176 @@
+#listmodule {
+ display: none;
+}
+#listmodule .listmodule{
+    padding: 0 5px;
+}
+.listmodule {
+	/*background-color: rgba(36, 36, 36, 0.46);*/
+    color: white;
+    position: fixed;
+    top:75px;
+    filter:alpha(opacity:60);
+    /*opacity:0.6;*/
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    width: 300px;
+    z-index: 999;
+    padding: 0  5px;
+    border-radius: 5px;
+}
+.listmoduleleft {
+    left: 23px;
+}
+.listmoduleright {
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.moduleboxtable {
+	width: 100%;
+	table-layout: fixed;
+	padding: 0;
+	margin:0;
+}
+table.moduleboxtable, table.moduleboxtable th, table.moduleboxtable td{
+    border: 1px solid #e0ecff;
+    text-align: center;
+}
+.moduleboxtable tr:hover td{
+    background-color:#e0ecff;
+    color: black;
+    opacity:0.8;
+}
+.moduleboxtable td {
+/*	border-bottom: 1px solid #e0ecff;
+	border-right: 1px solid #e0ecff;*/
+    color: white;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mdlable,.mdtitle {
+	/* background: #a2a2a2; */
+}
+.mdtitle {
+	text-align: center;
+}
+.tablecontent {
+	/* padding-top: 10px */
+}
+.tablecontentFJ {
+	/* padding-top: 10px */
+}
+.sxlb-jbsx{
+	background: #95b8e7;
+	margin: 0px;
+    line-height: 30px;
+}
+.moduletitle {
+    line-height: 40px;
+    padding: 0px 5px;
+    border-bottom: 1px solid #e0ecff;
+    margin-bottom: 2px;
+}
+
+.listmodulelable {
+    width:100px;
+}
+.listmodulevalue {
+    background: #ffffff;
+}
+
+.close-btn{
+	cursor: pointer;
+    position:absolute;
+    right:5px;
+    top:2.65px;
+    width:30px;
+    height:30px;     
+    overflow: hidden;  
+    display: inline-block; 
+}   
+.close-btn-del {
+    background: url("./images/icon_close.png") center;
+    background-repeat:no-repeat;
+}
+.close-btn > .close-btn {
+    position: relative;
+    left: -30px;
+    border-right: 30px solid transparent;
+    -webkit-filter: drop-shadow(30px  0 white);
+    filter: drop-shadow(30px 0 white);  
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;  
+}
+.refresh-btn{
+	cursor: pointer;
+    position:absolute;
+    right: 37px;
+    top: 3px;
+    width:30px;
+    height:30px; 
+    overflow: hidden;  
+    display: inline-block;
+}   
+.refresh-btn-del {
+    background: url("../../images/reset.png") center;
+    background-repeat:no-repeat;
+}
+.refresh-btn > .refresh-btn {
+    position: relative;
+    left: -30px;
+    border-right: 16px solid transparent;
+    -webkit-filter: drop-shadow(30px  0 white);
+    filter: drop-shadow(30px 0 white);  
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;  
+}
+
+/*滚动条样式*/
+.modulebox{
+	/*height: 600px;*/
+    max-height: 650px;
+    overflow: auto;
+}
+.modulebox::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+	/* height: 40px; */
+	height: 6px;
+}
+.modulebox::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(241,241,241,1);
+	background: rgba(241,241,241,1);
+}
+.modulebox::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(121,121,121,1);
+	border-radius: 0;
+	background: rgba(121,121,121,1);
+}
+/* .markup-item-thumbnail-img{
+    position:relative;
+    width: 100%;
+    height: 160px;
+    padding: 0 15px;
+} */
+
+.info{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: 99;
+}
+
+.info:hover{
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+}
